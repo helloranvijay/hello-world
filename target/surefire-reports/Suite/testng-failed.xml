@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="ranvijaybhaskar.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Ecommerce Order Test(failed)" verbose="0">
+    <classes>
+      <class name="ranvijaybhaskar.Tests.EcommerceOrderTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="OrderHistoryTest"/>
+          <include name="launchApplication"/>
+          <include name="submitOrderTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ranvijaybhaskar.Tests.EcommerceOrderTest -->
+    </classes>
+  </test> <!-- Ecommerce Order Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
